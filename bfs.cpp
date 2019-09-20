@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+//Time Complexity O(V+E)
+
 int main(){
     vector<vector<int> > g;
     int V,E;
@@ -40,5 +42,6 @@ int main(){
         }
     }
     for(int i=1;i<=V;i++) if(vis[i]) cout<<i<<" ";
+    //For an unweighted graph, layer[u] also gives the shortest distance of vertex u from start
     return 0;
 }
